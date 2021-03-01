@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Button } from 'react-bootstrap';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
