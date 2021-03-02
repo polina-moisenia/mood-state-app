@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Button } from 'react-bootstrap';
 
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
@@ -10,15 +10,15 @@ function App() {
         <p>Выбери настроение</p>
       </header>
       <div className="App-body">
-        <Button className="custom-button" onClick={() => setState('happy')}>cчастливо</Button>
-        <Button className="custom-button" size="lg" onClick={() => setState('sad')}>грустно</Button>
+        <Button className="custom-button" onClick={() => setState('positive')}>cчастливо</Button>
+        <Button className="custom-button" size="lg" onClick={() => setState('negative')}>грустно</Button>
       </div>
     </div>
   );
 }
 
 function setState(state) {
-  axios('https://moodstateapi20210301143406.azurewebsites.net/state', {
+  axios('http://mood-state-api-manager.azure-api.net/state', {
     method: 'post',
     data: {
       state: state
