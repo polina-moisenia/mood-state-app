@@ -17,10 +17,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.custom-button {
-  margin: 20px 20px;
-  font-size: 40px;
-  width: 300px;
-  height: 300px;
-}
