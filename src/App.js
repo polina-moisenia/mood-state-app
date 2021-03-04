@@ -13,12 +13,12 @@ function App() {
       </header>
       <div class="container text-center">
         <div class="row">
-          <div class="col-lg-5 col-sm-4" style={{ margin: "20px" }}>
+          <div class="col-lg-5" style={{ margin: "20px" }}>
             <Button class="btn btn-outline-info"
               style={{ width: "100%", height: "200px" }}
               onClick={() => setState('positive')}>cчастливо</Button>
           </div>
-          <div class="col-lg-5 col-sm-8" style={{ margin: "20px" }}>
+          <div class="col-lg-5" style={{ margin: "20px" }}>
             <Button class="btn btn-outline-info"
               style={{ width: "100%", height: "200px" }}
               onClick={() => setState('negative')}>грустно</Button>
@@ -30,7 +30,7 @@ function App() {
 }
 
 function setState(state) {
-  axios('http://mood-state-api-manager.azure-api.net/state', {
+  axios('https://mood-state-api-manager.azure-api.net/state', {
     method: 'post',
     data: {
       state: state

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ed493597-894b-4949-94a7-f8c37823d7e7/resourceGroups/mood-state-api-resource/providers/Microsoft.Web/sites/mood-state-app",
+    "appService.deploySubpath": "build"
+}
